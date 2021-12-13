@@ -27,7 +27,7 @@ import {
   import thumbYouTube from '../public/images/google.png'
 import thumbInkdrop from '../public/images/weDo.png'
 
-function index() {
+const Index = () => {
     return (
         <Layout>
         <Container>
@@ -219,4 +219,4 @@ function index() {
     )
 }
 
-export default index  
+export default Index  
