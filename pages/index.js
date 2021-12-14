@@ -100,7 +100,7 @@ const Index = () => {
         </BioSection>
         <BioSection>
           <BioYear>2012</BioYear>
-          Completed the Bachelor's&apos;s Program in the Graduate School of
+          Completed the Bachelor&apos;s Program in the Graduate School of
           Information Science at Ballarat University
         </BioSection>
         <BioSection>
