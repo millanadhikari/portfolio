@@ -38,7 +38,7 @@ const Index = () => {
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a full-stack developer based in Sydney!
       </Box>
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
@@ -99,7 +99,7 @@ const Index = () => {
           Born in Jhapa ( नेपाल ), Nepal.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
+          <BioYear>2012</BioYear>
           Completed the Bachelor's&apos;s Program in the Graduate School of
           Information Science at Ballarat University
         </BioSection>
