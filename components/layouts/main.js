@@ -6,13 +6,13 @@ import Footer from '../footer'
 import VoxelDogLoader from '../voxtel-dog-loader'
 
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-    ssr: false,
-    loading: () => <VoxelDogLoader />
-  })
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
 
 const Main = ({ children, router }) => {
-    return (
-        <Box as="main" pb={8}>
+  return (
+    <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Takuya's homepage" />
@@ -34,13 +34,11 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14}>
         <LazyVoxelDog />
-
         {children}
-
         <Footer />
       </Container>
     </Box>
-    )
+  )
 }
 
 export default Main
