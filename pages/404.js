@@ -27,7 +27,7 @@ const NotFound = ({h1, p, b}) => {
 export default NotFound
 
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   return {
     props: {
       h1: "Not found",
