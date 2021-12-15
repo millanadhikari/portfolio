@@ -8,16 +8,16 @@ import {
   Button
 } from '@chakra-ui/react'
 
-const NotFound = () => {
+const NotFound = ({h1, p, b}) => {
   return (
     <Container>
-      <Heading as="h1">Not found</Heading>
-      <Text>The page you&apos;re looking for was not found.</Text>
+      <Heading as="h1">{h1}</Heading>
+      <Text>{p}</Text>
       <Divider my={6} />
 
       <Box my={6} align="center">
         <NextLink href="/">
-          <Button colorScheme="teal">Return to home</Button>
+          <Button colorScheme="teal">{b}</Button>
         </NextLink>
       </Box>
     </Container>
@@ -25,3 +25,14 @@ const NotFound = () => {
 }
 
 export default NotFound
+
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      h1: "Not found",
+      p: "The page you&apos;re looking for was not found.",
+      b:"Return to home"
+    }
+  }
+}
